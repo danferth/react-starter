@@ -8,19 +8,23 @@ module.exports = {
     "src/**/*.tsx",
     "public/**/*.html",
   ],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "class", // false or 'media' or 'class'
   theme: {
     extend: {},
     colors: {
       gray: colors.trueGray,
       red: colors.rose,
       yellow: colors.amber,
-      green: colors.lime,
-      blue: colors.cyan,
+      green: colors.emerald,
+      blue: colors.lightBlue,
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/aspect-ratio"),
+  ],
 };

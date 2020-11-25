@@ -1,16 +1,13 @@
 import React from "react";
-import { printToday } from "./util.js";
-import { ReactComponent as AkioSVG } from "./images/svg/akio.svg";
+import Card from "./components/card";
+import DarkSwitch from "./components/darkBtn";
+import { useTheme } from "./util/ThemeContext";
 const App = () => {
+  const dark = useTheme();
   return (
-    <div className="max-w-md mx-auto flex items-center p-6 bg-gray-100 mt-10 rounded-lg shadow-xl">
-      <AkioSVG className="h-8 w-auto text-red-600 fill-current" />
-      <div className="ml-6">
-        <h1 className="text-2xl text-blue-700 leading-tight">
-          Hello {printToday()} Morning!
-        </h1>
-        <p className="text-base text-red-700 leading-normal">Good day?</p>
-      </div>
+    <div className={dark ? `dark` : ``}>
+      <DarkSwitch />
+      <Card />
     </div>
   );
 };

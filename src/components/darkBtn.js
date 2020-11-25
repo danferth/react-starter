@@ -3,9 +3,9 @@ import { useThemeUpdate } from "../util/ThemeContext";
 
 const DarkSwitch = () => {
   return (
-    <div className=" absolute top-0 right-0 p-4 bg-gray-50 dark:bg-gray-900 rounded-lg rounded-t-none rounded-r-none z-50">
+    <div className=" absolute top-0 right-0 p-4 bg-gray-50 dark:bg-gray-900 rounded-lg rounded-t-none rounded-r-none z-50 transition">
       <label
-        className="flex items-center text-xs text-gray-400 dark:text-gray-100"
+        className="flex items-center text-xs text-gray-400 dark:text-gray-100 transition"
         htmlFor="darkSwitch"
       >
         <span>Dark Mode</span>

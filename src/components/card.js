@@ -5,16 +5,13 @@ import cooper from "../images/cooper.jpg";
 
 const Card = () => {
   return (
-    <div
-      className="max-w-lg mx-auto p-6 bg-gray-100 dark:bg-gray-700 rounded-lg shadow-xl flex
-     flex-row items-center justify-start"
-    >
-      <AkioSVG className="h-8 w-auto text-red-600 dark:text-red-400 fill-current justify-self-start" />
+    <div className="w-1/3 p-6 bg-gray-100 dark:bg-gray-700 rounded-lg shadow-xl flex flex-row items-center justify-start transition">
+      <AkioSVG className="h-8 w-auto text-red-600 dark:text-red-400 fill-current justify-self-start transition" />
       <div className="ml-4">
-        <h1 className="text-2xl text-blue-700 dark:text-blue-50 leading-tight">
+        <h1 className="text-2xl text-blue-700 dark:text-blue-50 leading-tight transition">
           Cooper's Landing!
         </h1>
-        <p className="text-xs text-blue-800 dark:text-blue-200 leading-normal">
+        <p className="text-xs text-blue-800 dark:text-blue-200 leading-normal transition">
           {printToday()} is gonna be a good day :)
         </p>
       </div>

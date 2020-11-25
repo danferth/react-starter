@@ -7,7 +7,9 @@ const App = () => {
   return (
     <div className={dark ? `dark` : ``}>
       <DarkSwitch />
-      <Card />
+      <div className="min-w-full min-h-screen flex items-center justify-center z-10 bg-white dark:bg-gray-800 transition">
+        <Card />
+      </div>
     </div>
   );
 };
